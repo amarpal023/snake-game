@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Tourney:ital,wght@1,500&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.body {
+    background: url(https://media.istockphoto.com/photos/retro-scifi-background-futuristic-landscape-of-the-80s-digital-cyber-picture-id1136761682?k=6&m=1136761682&s=170667a&w=0&h=r-IK0zHxax4oEs3aeAlAsLwtBdldOucs8oSCQPlx8WU=); 
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#scorePoint {
+    position: absolute;
+    top: 0px;
+    left: 1350px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'Tourney', cursive;
+    color: yellowgreen;
+}
+
+#topScorePoint {
+    position: absolute;
+    top: 0px;
+    right: 1350px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'Tourney', cursive;
+    color:yellowgreen;
+}
+
+#field {
+    margin-top: 30px;
+    background: linear-gradient(rgb(193, 110, 253), rgb(57, 125, 250));
+    width: 90vmin;
+    height: 92vmin;
+    border: 2px solid whitesmoke;
+    display: grid;
+    grid-template-rows: repeat(18, 1fr);
+    grid-template-columns: repeat(18, 1fr);
+}
+
+.head {
+    background: linear-gradient(rgb(231, 87, 3), rgb(228, 228, 129));
+    border: 2px solid rgb(34, 4, 34); 
+    transform: scale(1.1);
+    border-radius: 9px;
+}
+
+.snake {
+    background: radial-gradient(darkgreen, black, green);
+    border: .25vmin solid black;
+    border-radius: 12px;
+}
+
+.apple {
+    background: linear-gradient(red, purple);
+    border: .25vmin solid whitesmoke;
+    border-radius: 8px;
+    display: block;
+    width: 56px;
+    height: 50px;
+    background-color: red;
+    border-radius: 40% 40% 40% 40% / 40% 40% 60% 60%;
+}
+
+#startButton {
+    position: absolute;
+    top: 400px;
+    left: 180px;
+    width: 150px;
+    height: 75px;
+    font-size: 30px;
+    border: 5px solid gray;
+    background: whitesmoke;
+    font-family: 'Tourney', cursive;
+}
